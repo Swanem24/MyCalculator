@@ -5,29 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <title>My Calculator</title>
 </head>
 
 <body>
-    <div class="form">
-        <form>
-            <label>First number: </label>
-            <input id="fnum" type="number">
-            <label>Second number: </label>
-            <input id="Snum" type="number">
-            <br>
-            <br>
-            <button type="button" onclick="addition()">
-                Addition
-            </button>
-            <button id="subtraction">
-                Subtraction
-            </button>
-            <br>
-            <h4>Answer: <span id="answer">0</span></h4>
-        </form>
+    <label>First Number: </label>
+    <input id="firstnum" type="number">
+    <label>Second Number: </label>
+    <input id="secondnum" type="number">
+    
+    <div class="buttonBox">
+        <button type="button" onclick="addition()">ADD</button>
+        <button type="button" onclick="subtraction()">MINUS</button>
+        <button type="button" onclick="multiply()">MUTIPLY</button>
+        <button type="button" onclick="divide()">DIVIDE</button>
     </div>
+
+    <h3>Answer: <span id="answer">0</span></h3>
+
 </body>
 
 </html>

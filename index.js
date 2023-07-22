@@ -1,17 +1,29 @@
-var firstNumber = document.getElementById("fnum");
-var SecondNumber = document.getElementById("Snum");
+var fNum = document.getElementById("firstnum");
+var sNum = document.getElementById("secondnum");
+var answer = document.getElementById("answer");
 
-var parsed1 = parseInt(firstNumber);
-var parsed2 = parseInt(SecondNumber);
-
-
+var calculatedAnswer = 0;
 
 function addition() {
-    var calculatedAnswer = parsed1 + parsed2;
+    calculatedAnswer = parseInt(fNum.value) + parseInt(sNum.value);
     console.log(calculatedAnswer);
+    answer.innerText = calculatedAnswer;
 }
 
 function subtraction() {
-    var calculatedAnswer = parsed1 - parsed2;
+    calculatedAnswer = parseInt(fNum.value) - parseInt(sNum.value);
     console.log(calculatedAnswer);
+    answer.innerText = calculatedAnswer;
+}
+
+function multiply() {
+    calculatedAnswer = parseInt(fNum.value) * parseInt(sNum.value);
+    console.log(calculatedAnswer);
+    answer.innerText = calculatedAnswer;
+}
+
+function divide() {
+    calculatedAnswer = parseInt(fNum.value) / parseInt(sNum.value);
+    console.log(calculatedAnswer);
+    answer.innerText = calculatedAnswer;
 }
